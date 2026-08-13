@@ -1,5 +1,12 @@
 # fun-toys — STATUS
 
+## 2026-08-14 — premium marks shipped
+
+Synced unique kit marks, favicons, and motion tokens with the live toys. Walnut cabinet + 3D shelf cards unchanged. Palettes not unified. Live: https://fun-toys-alpha.vercel.app
+
+Left off: all 18 toys + hub premium looks are on production.
+Next: none required.
+
 ## 2026-08-13 — premium cabinet
 
 Walnut grain, brass lamp, 3D tilting shelf cards, unique marks from fun-toys-kit, favicon/logo/og. Reduced motion disables tilt/enter. Live: https://fun-toys-alpha.vercel.app

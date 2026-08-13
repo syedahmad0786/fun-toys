@@ -1,17 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="rke">
-  <defs>
-    <filter id="rke-soft" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="0.6" result="b"/>
-      <feOffset dy="0.4"/>
-      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
-  <rect width="64" height="64" rx="8" fill="#efe6d4"/>
-     <ellipse cx="32" cy="36" rx="22" ry="16" fill="#cbb99a"/>
-     <path fill="none" stroke="#2b261f" stroke-width="1.2" d="M14 36c6-6 12-8 18-8s12 2 18 8"/>
-     <path fill="none" stroke="#2b261f" stroke-width="1.2" d="M16 40c5-4 10-6 16-6s11 2 16 6"/>
-     <path stroke="#2b261f" stroke-width="1.8" stroke-linecap="round" d="M32 12v18"/>
-     <path stroke="#2b261f" stroke-width="1.6" stroke-linecap="round" d="M24 30l8 6 8-6"/>
-     <circle cx="44" cy="28" r="3.2" fill="#2b261f" opacity=".55"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img"><rect width="64" height="64" fill="#efe6d4"/>
+         <path d="M18 48c8-18 20-18 28 0" fill="none" stroke="#6f675b" stroke-width="2" stroke-linecap="round"/>
+         <path d="M32 12v28" stroke="#2b261f" stroke-width="2.4" stroke-linecap="round"/>
+         <path d="M22 40h20M24 44h16M26 48h12" stroke="#2b261f" stroke-width="2" stroke-linecap="round"/>
+         <ellipse cx="44" cy="22" rx="7" ry="5" fill="#4a453c"/></svg>

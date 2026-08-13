@@ -178,3 +178,43 @@ for (const t of toys) {
   }
   shelf.append(li);
 }
+
+const dust = document.querySelector("#dust");
+if (dust instanceof HTMLCanvasElement && !reduce) {
+  const ctx = dust.getContext("2d");
+  const motes = Array.from({ length: 48 }, () => ({
+    x: Math.random(),
+    y: Math.random(),
+    r: 0.4 + Math.random() * 1.4,
+    v: 0.00012 + Math.random() * 0.00035,
+    a: 0.12 + Math.random() * 0.28,
+  }));
+  const size = () => {
+    dust.width = innerWidth * devicePixelRatio;
+    dust.height = innerHeight * devicePixelRatio;
+    dust.style.width = innerWidth + "px";
+    dust.style.height = innerHeight + "px";
+    ctx?.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+  };
+  size();
+  addEventListener("resize", size);
+  let run = true;
+  document.addEventListener("visibilitychange", () => {
+    run = !document.hidden;
+  });
+  const tick = () => {
+    if (run && ctx) {
+      ctx.clearRect(0, 0, innerWidth, innerHeight);
+      for (const m of motes) {
+        m.y -= m.v;
+        if (m.y < -0.02) m.y = 1.02;
+        ctx.fillStyle = `rgba(232, 208, 144, ${m.a})`;
+        ctx.beginPath();
+        ctx.arc(m.x * innerWidth, m.y * innerHeight, m.r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+    requestAnimationFrame(tick);
+  };
+  tick();
+}
