@@ -1,0 +1,72 @@
+:root {
+  --wood: #1a120c;
+  --shelf: #2a1c14;
+  --brass: #c4a35a;
+  --paper: #ead9b8;
+  --mute: #9a8468;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(900px 400px at 50% -10%, #3a2418, transparent),
+    var(--wood);
+  color: var(--paper);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  padding: 36px 18px 64px;
+}
+
+header { max-width: 40rem; margin: 0 auto 36px; }
+.kicker {
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: var(--brass);
+}
+h1 { font-size: clamp(48px, 10vw, 84px); margin: 0; font-weight: 600; }
+.lede { font-size: 20px; color: var(--mute); font-style: italic; }
+
+.shelf {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--shelf);
+  border: 1px solid color-mix(in srgb, var(--brass) 35%, #000);
+  padding: 18px 18px 16px;
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--brass) 25%, transparent);
+}
+
+.acc {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--brass);
+}
+
+.card h2 { margin: 8px 0 6px; font-size: 26px; }
+.card p { margin: 0 0 14px; color: var(--mute); flex: 1; }
+.links { font-family: "IBM Plex Mono", monospace; font-size: 11px; }
+.links a { color: var(--paper); margin-right: 12px; }
+.links a:hover { color: var(--brass); }
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  color: var(--mute);
+}
+footer a { color: var(--brass); }
