@@ -1,5 +1,12 @@
 # fun-toys — STATUS
 
+## 2026-08-13 — premium cabinet
+
+Walnut grain, brass lamp, 3D tilting shelf cards, unique marks from fun-toys-kit, favicon/logo/og. Reduced motion disables tilt/enter. Live: https://fun-toys-alpha.vercel.app
+
+Left off: redeploy hub after this commit.
+Next: keep webring URLs pointed here.
+
 ## 2026-08-13 — FT–017 and FT–018 live
 
 - Cabinet lists Pet the Void and Hunted 404. Live hub: https://fun-toys-alpha.vercel.app
