@@ -112,6 +112,20 @@ const toys = [
     live: "https://pixel-penance.vercel.app",
     git: "https://github.com/syedahmad0786/pixel-penance",
   },
+  {
+    acc: "FT–017",
+    name: "Pet the Void",
+    dare: "A hole in the page. Hold it. It purrs. It gets larger.",
+    live: "https://pet-the-void.vercel.app",
+    git: "https://github.com/syedahmad0786/pet-the-void",
+  },
+  {
+    acc: "FT–018",
+    name: "Hunted 404",
+    dare: "A 404 that hunts the cursor. Clicks do not work.",
+    live: "https://hunted-404.vercel.app",
+    git: "https://github.com/syedahmad0786/hunted-404",
+  },
 ];
 
 const shelf = document.querySelector("#shelf");
