@@ -1,6 +1,6 @@
 # Fun Toys
 
-The public cabinet for eleven small open-source toys.
+The public cabinet for sixteen small open-source toys.
 
 Live: https://fun-toys-alpha.vercel.app  
 Repo: https://github.com/syedahmad0786/fun-toys
